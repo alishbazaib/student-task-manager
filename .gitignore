@@ -1,0 +1,17 @@
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Maven output
+target/
+*.class
+
+# Generated files
+dist/
+build/

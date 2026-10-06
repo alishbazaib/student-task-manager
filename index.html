@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Task Management System</h1>
+        <p class="intro">Manage your academic tasks easily.</p>
+
+        <form id="taskForm">
+            <input
+                type="text"
+                id="taskTitle"
+                placeholder="Task title"
+            >
+
+            <textarea
+                id="taskDescription"
+                placeholder="Task description"
+            ></textarea>
+
+            <button type="submit">Add Task</button>
+        </form>
+
+        <h2>Student Tasks</h2>
+
+        <div id="taskList">
+
+            <div class="task">
+                <h3>Complete Git Assignment</h3>
+                <p>Finish the local Git repository and commit the project.</p>
+            </div>
+
+            <div class="task">
+                <h3>Study for Database Quiz</h3>
+                <p>Review SQL queries and database normalization.</p>
+            </div>
+
+            <div class="task">
+                <h3>Submit Web Development Project</h3>
+                <p>Check the final files and submit the project before the deadline.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
