@@ -71,3 +71,26 @@ button {
     margin-top: -10px;
     margin-bottom: 20px;
 }
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 5px 5px 0;
+    font-weight: bold;
+}
+
+.pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-btn {
+    padding: 7px 12px;
+    font-size: 14px;
+}
