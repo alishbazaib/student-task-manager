@@ -34,6 +34,7 @@ form {
 
 input,
 textarea,
+select,
 button {
     padding: 12px;
     font-size: 16px;
@@ -42,6 +43,12 @@ button {
 textarea {
     min-height: 100px;
     resize: vertical;
+}
+
+select {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 button {
@@ -59,18 +66,14 @@ button {
     margin-top: 0;
 }
 
-@media (max-width: 600px) {
-    .container {
-        padding: 20px;
-    }
-}
-
 .subtitle {
     text-align: center;
     color: #666;
     margin-top: -10px;
     margin-bottom: 20px;
 }
+
+/* Task Status */
 
 .status {
     display: inline-block;
@@ -90,7 +93,38 @@ button {
     color: #155724;
 }
 
+/* Task Priority */
+
+.priority {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 5px 5px 0;
+    font-weight: bold;
+}
+
+.high {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.medium {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.low {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
 .status-btn {
     padding: 7px 12px;
     font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
 }

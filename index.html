@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Student Task Management System</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="container">
-        <h1>Student Task Management System</h1>
-        <p class="subtitle">Organize your academic tasks efficiently</p>
-        <p class="intro">Manage your academic tasks easily.</p>
 
+        <h1>Student Task Management System</h1>
+
+        <p class="subtitle">
+            Organize your academic tasks efficiently
+        </p>
+
+        <p class="intro">
+            Manage your academic tasks easily.
+        </p>
+
+        <!-- Task Form -->
         <form id="taskForm">
+
             <input
                 type="text"
                 id="taskTitle"
@@ -25,35 +37,101 @@
                 placeholder="Task description"
             ></textarea>
 
-            <button type="submit">Add Task</button>
+            <!-- Task Priority -->
+            <select id="taskPriority">
+                <option value="High">High Priority</option>
+                <option value="Medium" selected>Medium Priority</option>
+                <option value="Low">Low Priority</option>
+            </select>
+
+            <button type="submit">
+                Add Task
+            </button>
+
         </form>
 
         <h2>Student Tasks</h2>
 
-   <div id="taskList">
-    <div class="task">
-        <h3>Read Chapter</h3>
-        <p>Read the assigned textbook chapter and take notes.</p>
-        <span class="status pending">Pending</span>
-        <button class="status-btn">Mark Completed</button>
+        <!-- Task List -->
+        <div id="taskList">
+
+            <!-- Task 1 -->
+            <div class="task">
+
+                <h3>Read Chapter</h3>
+
+                <p>
+                    Read the assigned textbook chapter and take notes.
+                </p>
+
+                <span class="priority high">
+                    High
+                </span>
+
+                <span class="status pending">
+                    Pending
+                </span>
+
+                <button class="status-btn">
+                    Mark Completed
+                </button>
+
+            </div>
+
+
+            <!-- Task 2 -->
+            <div class="task">
+
+                <h3>Study JavaScript</h3>
+
+                <p>
+                    Review JavaScript functions and events.
+                </p>
+
+                <span class="priority medium">
+                    Medium
+                </span>
+
+                <span class="status completed">
+                    Completed
+                </span>
+
+                <button class="status-btn">
+                    Mark Pending
+                </button>
+
+            </div>
+
+
+            <!-- Task 3 -->
+            <div class="task">
+
+                <h3>Prepare Project Report</h3>
+
+                <p>
+                    Write the documentation for the project.
+                </p>
+
+                <span class="priority low">
+                    Low
+                </span>
+
+                <span class="status pending">
+                    Pending
+                </span>
+
+                <button class="status-btn">
+                    Mark Completed
+                </button>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="task">
-        <h3>Study JavaScript</h3>
-        <p>Review JavaScript functions and events.</p>
-        <span class="status completed">Completed</span>
-        <button class="status-btn">Mark Pending</button>
-    </div>
-
-    <div class="task">
-        <h3>Prepare Project Report</h3>
-        <p>Write the documentation for the project.</p>
-        <span class="status pending">Pending</span>
-        <button class="status-btn">Mark Completed</button>
-    </div>
-</div>
-    </div>
-
+    <!-- JavaScript -->
     <script src="script.js"></script>
+
 </body>
 </html>
